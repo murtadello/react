@@ -1,10 +1,11 @@
 import React from 'react';
 
-function Greet()
-{
-    return <h1>Hello Murtaza Mohammadi from Afghanistan</h1>
+const Greet = props => {
+    console.log(props)
+    return(
+    <div><h1>Hello {props.name} a.k.a {props.heroname}</h1>
+    {props.children}
+    </div> )
 }
 
-
- const Message = () => <h1>Hello Murtaza Mohammadi</h1>
- export default Message 
+ export default Greet 
